@@ -1,0 +1,212 @@
+{
+  "Aceh": {
+    "Consumers": 1724360,
+    "Distributed_GWh": 3458.3,
+    "Generated_GWh": 3514.18,
+    "Distributed_per_Consumer_kWh": 2005.56
+  },
+  "Sumatera Utara": {
+    "Consumers": 4462721,
+    "Distributed_GWh": 12472.84,
+    "Generated_GWh": 18227.36,
+    "Distributed_per_Consumer_kWh": 2794.9
+  },
+  "Sumatera Barat": {
+    "Consumers": 1693179,
+    "Distributed_GWh": 3810.84,
+    "Generated_GWh": 4072.56,
+    "Distributed_per_Consumer_kWh": 2250.7
+  },
+  "Riau": {
+    "Consumers": 2173846,
+    "Distributed_GWh": 8212.56,
+    "Generated_GWh": 6132.59,
+    "Distributed_per_Consumer_kWh": 3777.89
+  },
+  "Jambi": {
+    "Consumers": 1160040,
+    "Distributed_GWh": 2371.18,
+    "Generated_GWh": 649.02,
+    "Distributed_per_Consumer_kWh": 2044.05
+  },
+  "Sumatera Selatan": {
+    "Consumers": 2484605,
+    "Distributed_GWh": 6278.5,
+    "Generated_GWh": 12813.45,
+    "Distributed_per_Consumer_kWh": 2526.96
+  },
+  "Bengkulu": {
+    "Consumers": 656269,
+    "Distributed_GWh": 1155.97,
+    "Generated_GWh": 2402.8,
+    "Distributed_per_Consumer_kWh": 1761.43
+  },
+  "Lampung": {
+    "Consumers": 2635235,
+    "Distributed_GWh": 5761.91,
+    "Generated_GWh": 5510.49,
+    "Distributed_per_Consumer_kWh": 2186.49
+  },
+  "Bangka Belitung": {
+    "Consumers": 558014,
+    "Distributed_GWh": 1610.81,
+    "Generated_GWh": 1159.43,
+    "Distributed_per_Consumer_kWh": 2886.68
+  },
+  "Kepulauan Riau": {
+    "Consumers": 704672,
+    "Distributed_GWh": 4209.39,
+    "Generated_GWh": 4440.21,
+    "Distributed_per_Consumer_kWh": 5973.55
+  },
+  "DKI Jakarta": {
+    "Consumers": 5225077,
+    "Distributed_GWh": 36992.35,
+    "Generated_GWh": 16708.21,
+    "Distributed_per_Consumer_kWh": 7079.77
+  },
+  "Jawa Barat": {
+    "Consumers": 16937850,
+    "Distributed_GWh": 58564.31,
+    "Generated_GWh": 39566.5,
+    "Distributed_per_Consumer_kWh": 3457.6
+  },
+  "Jawa Tengah": {
+    "Consumers": 11820721,
+    "Distributed_GWh": 28431.75,
+    "Generated_GWh": 68376.0,
+    "Distributed_per_Consumer_kWh": 2405.25
+  },
+  "D.I Yogyakarta": {
+    "Consumers": 1475831,
+    "Distributed_GWh": 3564.23,
+    "Generated_GWh": 3.48,
+    "Distributed_per_Consumer_kWh": 2415.07
+  },
+  "Jawa Timur": {
+    "Consumers": 13721107,
+    "Distributed_GWh": 41886.3,
+    "Generated_GWh": 44355.38,
+    "Distributed_per_Consumer_kWh": 3052.69
+  },
+  "Banten": {
+    "Consumers": 3994766,
+    "Distributed_GWh": 26971.4,
+    "Generated_GWh": 52572.85,
+    "Distributed_per_Consumer_kWh": 6751.68
+  },
+  "Bali": {
+    "Consumers": 1701512,
+    "Distributed_GWh": 6354.53,
+    "Generated_GWh": 4614.4,
+    "Distributed_per_Consumer_kWh": 3734.64
+  },
+  "Nusa Tenggara Barat": {
+    "Consumers": 1902309,
+    "Distributed_GWh": 2572.6,
+    "Generated_GWh": 2939.57,
+    "Distributed_per_Consumer_kWh": 1352.36
+  },
+  "Nusa Tenggara Timur": {
+    "Consumers": 1192492,
+    "Distributed_GWh": 1333.25,
+    "Generated_GWh": 1526.55,
+    "Distributed_per_Consumer_kWh": 1118.04
+  },
+  "Kalimantan Barat": {
+    "Consumers": 1520034,
+    "Distributed_GWh": 3308.59,
+    "Generated_GWh": 3874.6,
+    "Distributed_per_Consumer_kWh": 2176.66
+  },
+  "Kalimantan Tengah": {
+    "Consumers": 817458,
+    "Distributed_GWh": 1831.08,
+    "Generated_GWh": 2755.06,
+    "Distributed_per_Consumer_kWh": 2239.97
+  },
+  "Kalimantan Selatan": {
+    "Consumers": 1473022,
+    "Distributed_GWh": 3693.87,
+    "Generated_GWh": 3469.95,
+    "Distributed_per_Consumer_kWh": 2507.68
+  },
+  "Kalimantan Timur": {
+    "Consumers": 1473022,
+    "Distributed_GWh": 4803.87,
+    "Generated_GWh": 4980.21,
+    "Distributed_per_Consumer_kWh": 3261.23
+  },
+  "Kalimantan Utara": {
+    "Consumers": 64030,
+    "Distributed_GWh": 263.04,
+    "Generated_GWh": 688.4,
+    "Distributed_per_Consumer_kWh": 4108.07
+  },
+  "Sulawesi Utara": {
+    "Consumers": 814281,
+    "Distributed_GWh": 2095.38,
+    "Generated_GWh": 2344.04,
+    "Distributed_per_Consumer_kWh": 2573.29
+  },
+  "Sulawesi Tengah": {
+    "Consumers": 935794,
+    "Distributed_GWh": 1602.92,
+    "Generated_GWh": 2527.14,
+    "Distributed_per_Consumer_kWh": 1712.9
+  },
+  "Sulawesi Selatan": {
+    "Consumers": 2748058,
+    "Distributed_GWh": 8558.03,
+    "Generated_GWh": 9239.97,
+    "Distributed_per_Consumer_kWh": 3114.21
+  },
+  "Sulawesi Tenggara": {
+    "Consumers": 793645,
+    "Distributed_GWh": 1342.95,
+    "Generated_GWh": 1475.1,
+    "Distributed_per_Consumer_kWh": 1692.13
+  },
+  "Gorontalo": {
+    "Consumers": 350128,
+    "Distributed_GWh": 742.22,
+    "Generated_GWh": 849.8,
+    "Distributed_per_Consumer_kWh": 2119.85
+  },
+  "Sulawesi Barat": {
+    "Consumers": 356118,
+    "Distributed_GWh": 518.33,
+    "Generated_GWh": 236.79,
+    "Distributed_per_Consumer_kWh": 1455.5
+  },
+  "Maluku": {
+    "Consumers": 327994,
+    "Distributed_GWh": 633.56,
+    "Generated_GWh": 848.2,
+    "Distributed_per_Consumer_kWh": 1931.62
+  },
+  "Maluku Utara": {
+    "Consumers": 464669,
+    "Distributed_GWh": 1018.52,
+    "Generated_GWh": 729.45,
+    "Distributed_per_Consumer_kWh": 2191.93
+  },
+  "Papua Barat": {
+    "Consumers": 286931,
+    "Distributed_GWh": 667.98,
+    "Generated_GWh": 736.07,
+    "Distributed_per_Consumer_kWh": 2328.02
+  },
+  "Papua": {
+    "Consumers": 549971,
+    "Distributed_GWh": 1342.39,
+    "Generated_GWh": 1515.91,
+    "Distributed_per_Consumer_kWh": 2440.84
+  },
+  "Indonesia": {
+    "Consumers": 89153278,
+    "Distributed_GWh": 288435.75,
+    "Generated_GWh": 325855.69,
+    "Distributed_per_Consumer_kWh": 3235.28
+  }
+}
