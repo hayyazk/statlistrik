@@ -11,10 +11,18 @@ const bounds: LatLngBoundsExpression = [
   [6.1, 141.1]
 ];
 
+const center: [number, number] = [-2, 118];
+
 const metricLabels: Record<string, string> = {
-  Generated_GWh: "Listrik Dibangkitkan (GWh)",
-  Distributed_GWh: "Penggunaan Listrik (GWh)",
-  Distributed_per_Consumer_kWh: "Penggunaan Listrik per Konsumen (kWh)"
+  Generated_GWh: "Pembangkitan Listrik",
+  Distributed_GWh: "Penggunaan Listrik",
+  Distributed_per_Consumer_kWh: "Penggunaan Listrik per Konsumen"
+};
+
+const metricUnits: Record<string, string> = {
+  Generated_GWh: "GWh",
+  Distributed_GWh: "GWh",
+  Distributed_per_Consumer_kWh: "kWh"
 };
 
 const colorScale = ["#FFFFF2", "#faf291", "#F8E70D", "#FCB407", "#c26100"];
@@ -55,7 +63,7 @@ const Map: React.FC<MapProps> = ({province, setProvince}) => {
       color: "#111",
       fillOpacity: 1
     });
-    layer.bindTooltip(`<strong>${province}</strong><br>${metricLabels[selectedMetric]}: ${value ?? "No data"}`);
+    layer.bindTooltip(`<strong>${province}</strong><br>${metricLabels[selectedMetric]}: ${value ?? "No data"} ${metricUnits[selectedMetric]}`);
     layer.on({
       click: () => setProvince(province),
     });
@@ -73,7 +81,7 @@ const Map: React.FC<MapProps> = ({province, setProvince}) => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative m-4">
       <div className="mb-4 flex gap-4 justify-center">
         {Object.keys(metricLabels).map((key) => (
           <label key={key} className="cursor-pointer">
@@ -93,12 +101,15 @@ const Map: React.FC<MapProps> = ({province, setProvince}) => {
         bounds={bounds}
         maxBounds={bounds}
         maxBoundsViscosity={1.0}
-        style={{ height: "500px", width: "100%" }}
+        style={{ height: "500px", width: "700px" }}
         zoomSnap={0.1}
         scrollWheelZoom={true}
         dragging={true}
-        doubleClickZoom={true}
-        zoomControl={true}
+        doubleClickZoom={false}
+        zoomControl={false}
+        zoomDelta={0.5}
+        minZoom={4}
+        maxZoom={6}
       >
         <TileLayer
           attribution='&copy; <a href="https://carto.com/">Carto</a>'
@@ -119,7 +130,7 @@ const Map: React.FC<MapProps> = ({province, setProvince}) => {
                     className="w-4 h-4 mr-2 rounded-sm"
                     style={{ backgroundColor: color }}
                 />
-                <span>{val.toFixed(0)} – {next.toFixed(0)}</span>
+                <span>{val.toFixed(0)} – {next.toFixed(0)} {metricUnits[selectedMetric]}</span>
                 </div>
             );
             })}
