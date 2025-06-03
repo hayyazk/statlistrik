@@ -1,0 +1,317 @@
+{
+  "Aceh": {
+    "total": 2005.56,
+    "industri": 80233.77,
+    "rumahtangga": 1339.2,
+    "komersial": 3813.59,
+    "pemerintah": 8954.59,
+    "penerangan_jalan": 45509.51,
+    "sosial": 4542.17
+  },
+  "Sumatera Utara": {
+    "total": 2794.9,
+    "industri": 613439.58,
+    "rumahtangga": 1478.12,
+    "komersial": 12462.91,
+    "pemerintah": 13819.89,
+    "penerangan_jalan": 22984.49,
+    "sosial": 7031.81
+  },
+  "Sumatera Barat": {
+    "total": 2250.7,
+    "industri": 1097516.34,
+    "rumahtangga": 1269.86,
+    "komersial": 3794.35,
+    "pemerintah": 12458.73,
+    "penerangan_jalan": 21220.65,
+    "sosial": 5244.05
+  },
+  "Riau": {
+    "total": 3777.89,
+    "industri": 4168545.22,
+    "rumahtangga": 1622.82,
+    "komersial": 7583.54,
+    "pemerintah": 16723.7,
+    "penerangan_jalan": 22509.81,
+    "sosial": 6580.98
+  },
+  "Jambi": {
+    "total": 2044.05,
+    "industri": 220132.69,
+    "rumahtangga": 1406.93,
+    "komersial": 8375.6,
+    "pemerintah": 11188.75,
+    "penerangan_jalan": 8702.71,
+    "sosial": 4552.72
+  },
+  "Sumatera Selatan": {
+    "total": 2526.96,
+    "industri": 407405.5,
+    "rumahtangga": 1482.86,
+    "komersial": 17417.16,
+    "pemerintah": 16239.18,
+    "penerangan_jalan": 18548.1,
+    "sosial": 5895.88
+  },
+  "Bengkulu": {
+    "total": 1761.43,
+    "industri": 457362.64,
+    "rumahtangga": 1302.93,
+    "komersial": 8302.33,
+    "pemerintah": 9881.21,
+    "penerangan_jalan": 7497.79,
+    "sosial": 4140.01
+  },
+  "Lampung": {
+    "total": 2186.49,
+    "industri": 134048.47,
+    "rumahtangga": 1326.4,
+    "komersial": 7850.33,
+    "pemerintah": 15449.98,
+    "penerangan_jalan": 41486.7,
+    "sosial": 3965.11
+  },
+  "Bangka Belitung": {
+    "total": 2886.68,
+    "industri": 527711.14,
+    "rumahtangga": 1640.32,
+    "komersial": 6177.74,
+    "pemerintah": 6909.16,
+    "penerangan_jalan": 2988.33,
+    "sosial": 6410.34
+  },
+  "Kepulauan Riau": {
+    "total": 5973.55,
+    "industri": 1846095.76,
+    "rumahtangga": 2521.22,
+    "komersial": 17209.66,
+    "pemerintah": 28940.64,
+    "penerangan_jalan": 12267.73,
+    "sosial": 12364.45
+  },
+  "DKI Jakarta": {
+    "total": 7079.77,
+    "industri": 695893.11,
+    "rumahtangga": 3215.95,
+    "komersial": 45385.28,
+    "pemerintah": 209146.32,
+    "penerangan_jalan": 22151.01,
+    "sosial": 33424.81
+  },
+  "Jawa Barat": {
+    "total": 3457.6,
+    "industri": 1418330.41,
+    "rumahtangga": 1371.08,
+    "komersial": 10710.89,
+    "pemerintah": 28182.64,
+    "penerangan_jalan": 4211.05,
+    "sosial": 4626.54
+  },
+  "Jawa Tengah": {
+    "total": 2405.25,
+    "industri": 493638.82,
+    "rumahtangga": 1257.22,
+    "komersial": 7196.69,
+    "pemerintah": 12155.0,
+    "penerangan_jalan": 9128.54,
+    "sosial": 4573.39
+  },
+  "D.I Yogyakarta": {
+    "total": 2415.07,
+    "industri": 316529.41,
+    "rumahtangga": 1428.4,
+    "komersial": 12227.59,
+    "pemerintah": 19995.03,
+    "penerangan_jalan": 4868.17,
+    "sosial": 9424.23
+  },
+  "Jawa Timur": {
+    "total": 3052.69,
+    "industri": 140994.54,
+    "rumahtangga": 1292.16,
+    "komersial": 7762.05,
+    "pemerintah": 19015.23,
+    "penerangan_jalan": 8114.13,
+    "sosial": 4643.28
+  },
+  "Banten": {
+    "total": 6751.68,
+    "industri": 2159796.5,
+    "rumahtangga": 1766.94,
+    "komersial": 16759.38,
+    "pemerintah": 38680.03,
+    "penerangan_jalan": 9603.03,
+    "sosial": 6360.07
+  },
+  "Bali": {
+    "total": 3734.64,
+    "industri": 154364.31,
+    "rumahtangga": 1958.14,
+    "komersial": 12310.66,
+    "pemerintah": 23145.33,
+    "penerangan_jalan": 10042.98,
+    "sosial": 4699.81
+  },
+  "Nusa Tenggara Barat": {
+    "total": 1352.36,
+    "industri": 372745.71,
+    "rumahtangga": 888.17,
+    "komersial": 10475.46,
+    "pemerintah": 10518.61,
+    "penerangan_jalan": 16900.37,
+    "sosial": 3789.82
+  },
+  "Nusa Tenggara Timur": {
+    "total": 1118.04,
+    "industri": 105599.02,
+    "rumahtangga": 721.58,
+    "komersial": 8644.45,
+    "pemerintah": 6610.09,
+    "penerangan_jalan": 15566.04,
+    "sosial": 3675.14
+  },
+  "Kalimantan Barat": {
+    "total": 2176.66,
+    "industri": 379672.83,
+    "rumahtangga": 1473.48,
+    "komersial": 8258.37,
+    "pemerintah": 15110.73,
+    "penerangan_jalan": 10626.39,
+    "sosial": 5207.81
+  },
+  "Kalimantan Tengah": {
+    "total": 2239.97,
+    "industri": 569349.11,
+    "rumahtangga": 1514.7,
+    "komersial": 5198.39,
+    "pemerintah": 12165.98,
+    "penerangan_jalan": 12264.94,
+    "sosial": 4145.62
+  },
+  "Kalimantan Selatan": {
+    "total": 2507.68,
+    "industri": 908226.0,
+    "rumahtangga": 1454.25,
+    "komersial": 8759.34,
+    "pemerintah": 14453.35,
+    "penerangan_jalan": 13327.22,
+    "sosial": 3974.2
+  },
+  "Kalimantan Timur": {
+    "total": 3261.23,
+    "industri": 881768.39,
+    "rumahtangga": 2011.57,
+    "komersial": 13059.26,
+    "pemerintah": 26605.05,
+    "penerangan_jalan": 12939.36,
+    "sosial": 8111.13
+  },
+  "Kalimantan Utara": {
+    "total": 4108.07,
+    "industri": 881833.33,
+    "rumahtangga": 2011.8,
+    "komersial": 13506.96,
+    "pemerintah": 26602.15,
+    "penerangan_jalan": 12944.92,
+    "sosial": 8115.76
+  },
+  "Sulawesi Utara": {
+    "total": 2573.29,
+    "industri": 771626.62,
+    "rumahtangga": 1329.71,
+    "komersial": 16232.48,
+    "pemerintah": 9062.76,
+    "penerangan_jalan": 22495.64,
+    "sosial": 6083.88
+  },
+  "Sulawesi Tengah": {
+    "total": 1712.9,
+    "industri": 279495.41,
+    "rumahtangga": 1221.0,
+    "komersial": 8618.43,
+    "pemerintah": 12102.11,
+    "penerangan_jalan": 27722.6,
+    "sosial": 2536.59
+  },
+  "Sulawesi Selatan": {
+    "total": 3114.21,
+    "industri": 720167.54,
+    "rumahtangga": 1372.39,
+    "komersial": 11909.68,
+    "pemerintah": 16230.27,
+    "penerangan_jalan": 28759.66,
+    "sosial": 7915.43
+  },
+  "Sulawesi Tenggara": {
+    "total": 1692.13,
+    "industri": 120726.74,
+    "rumahtangga": 1168.11,
+    "komersial": 8612.13,
+    "pemerintah": 8133.69,
+    "penerangan_jalan": 12112.36,
+    "sosial": 3752.28
+  },
+  "Gorontalo": {
+    "total": 2119.85,
+    "industri": 509944.44,
+    "rumahtangga": 1363.7,
+    "komersial": 10541.97,
+    "pemerintah": 16915.73,
+    "penerangan_jalan": 18877.37,
+    "sosial": 4890.12
+  },
+  "Sulawesi Barat": {
+    "total": 1455.5,
+    "industri": 207400.88,
+    "rumahtangga": 1010.87,
+    "komersial": 5803.12,
+    "pemerintah": 12088.58,
+    "penerangan_jalan": 25405.41,
+    "sosial": 3429.02
+  },
+  "Maluku": {
+    "total": 1931.62,
+    "industri": 127157.89,
+    "rumahtangga": 1197.43,
+    "komersial": 10746.12,
+    "pemerintah": 19073.4,
+    "penerangan_jalan": 21483.52,
+    "sosial": 5722.56
+  },
+  "Maluku Utara": {
+    "total": 2191.93,
+    "industri": 3756184.21,
+    "rumahtangga": 1169.35,
+    "komersial": 9449.08,
+    "pemerintah": 11349.4,
+    "penerangan_jalan": 10094.34,
+    "sosial": 3230.01
+  },
+  "Papua Barat": {
+    "total": 2328.02,
+    "industri": 288372.09,
+    "rumahtangga": 1523.3,
+    "komersial": 9678.51,
+    "pemerintah": 14781.97,
+    "penerangan_jalan": 7783.31,
+    "sosial": 5744.59
+  },
+  "Papua": {
+    "total": 2440.84,
+    "industri": 99411.76,
+    "rumahtangga": 1594.5,
+    "komersial": 10149.86,
+    "pemerintah": 21091.76,
+    "penerangan_jalan": 12588.83,
+    "sosial": 6707.46
+  },
+  "Indonesia": {
+    "total": 3235.28,
+    "industri": 428435.99,
+    "rumahtangga": 1500.16,
+    "komersial": 11883.13,
+    "pemerintah": 21814.6,
+    "penerangan_jalan": 10222.05,
+    "sosial": 5768.01
+  }
+}

@@ -11,8 +11,6 @@ const bounds: LatLngBoundsExpression = [
   [6.1, 141.1]
 ];
 
-const center: [number, number] = [-2, 118];
-
 const metricLabels: Record<string, string> = {
   Generated_GWh: "Pembangkitan Listrik",
   Distributed_GWh: "Penggunaan Listrik",

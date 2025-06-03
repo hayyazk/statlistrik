@@ -1,8 +1,8 @@
 Provinsi,2019,2020,2021,2022,2023
 Aceh,,,,,
 Sumatera Utara,317.62,61.54,19.93,30.18,29.89
-Sumatera Barat,,,,0.14,,0.97
-Riau,0.42,0.42,,,,10.93
+Sumatera Barat,,,0.14,,0.97
+Riau,0.42,0.42,,,10.93
 Jambi,,,14.09,1.44,0.41
 Sumatera Selatan,,,9.35,7.08,7.09
 Bengkulu,,,13.77,12.53,10.34
@@ -13,19 +13,19 @@ DKI Jakarta,,,,,
 Jawa Barat,16.31,16.31,11.14,8.64,27.73
 Jawa Tengah,,,0.01,,
 D.I Yogyakarta,,,,,
-Jawa Timur,,27.15,35.62,33.61
+Jawa Timur,,,27.15,35.62,33.61
 Banten,,,,,
-Bali,3.08,3.08,,,,,
+Bali,3.08,3.08,,,
 Nusa Tenggara Barat,,,,,
 Nusa Tenggara Timur,,,,,
 Kalimantan Barat,12.85,12.85,110.84,109.02,129.29
-Kalimantan Tengah,,,,56.54,33.35,40.92
+Kalimantan Tengah,,,56.54,33.35,40.92
 Kalimantan Selatan,49.62,49.62,10.10,11.64,10.93
 Kalimantan Timur,7.93,7.93,20.08,17.94,17.24
 Kalimantan Utara,,,,,
 Sulawesi Utara,,,,,
 Sulawesi Tengah,,,,,
-Sulawesi Selatan,439.10,434.66,353.78,478.95
+Sulawesi Selatan,,439.10,434.66,353.78,478.95
 Sulawesi Tenggara,,,,,
 Gorontalo,,,,,
 Sulawesi Barat,,,,,
