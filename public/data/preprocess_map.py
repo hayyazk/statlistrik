@@ -6,7 +6,7 @@ distributed_df = pd.read_csv("public/data/raw/distributed.csv")
 generated_df = pd.read_csv("public/data/raw/generated.csv")
 
 #map data
-year = "2023" 
+year = "2019" 
 map_consumers_df = consumers_df[["Provinsi", year]].rename(columns={year: "Consumers"})
 map_distributed_df = distributed_df[["Provinsi", year]].rename(columns={year: "Distributed_GWh"})
 map_generated_df = generated_df[["Provinsi", year]].rename(columns={year: "Generated_GWh"})

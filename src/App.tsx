@@ -13,8 +13,8 @@ function App() {
       <p className="text-amber-100 font-bold mb-4">Dashboard Pembangkitan dan Penggunaan Listrik Indonesia</p>
       <div className="flex gap-6">
         <Map province={province} setProvince={setProvince} />
-        <Pie province={province} />
       </div>
+        <Pie province={province} />
     </div>
   );
 }
