@@ -28,7 +28,12 @@ function getColor(value: number, breaks: number[]) {
   return colorScale[colorScale.length - 1];
 }
 
-const Map: React.FC = () => {
+interface MapProps {
+  province: string;
+  setProvince: (prov: string) => void;
+}
+
+const Map: React.FC<MapProps> = ({province, setProvince}) => {
   const [selectedMetric, setSelectedMetric] = useState("Generated_GWh");
   const [jenksBreaks, setJenksBreaks] = useState<number[]>([]);
 
@@ -51,6 +56,9 @@ const Map: React.FC = () => {
       fillOpacity: 1
     });
     layer.bindTooltip(`<strong>${province}</strong><br>${metricLabels[selectedMetric]}: ${value ?? "No data"}`);
+    layer.on({
+      click: () => setProvince(province),
+    });
   };
 
   const styleFeature = (feature: any) => {
