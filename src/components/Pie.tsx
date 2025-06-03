@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Chart } from "react-google-charts";
 import Papa from 'papaparse';
 import pembangkitan from "../../public/data/pie_data_pembangkitan_2023.json";
-import penggunaan from "../../public/data/pie_data_pembangkitan_2023.json";
+import penggunaan from "../../public/data/pie_data_penggunaan_2023.json";
 
 const Pie = ({province} : {province:string}) => {
 
@@ -13,6 +13,7 @@ const Pie = ({province} : {province:string}) => {
     var [data, setData] = useState([])
     var [consumers, setConsumers] = useState([])
     var [bangkit, setBangkit] = useState([])
+    var [guna, setGuna] = useState([])
 
     var data = [
             ["Task", "Hours per Day"],
@@ -35,6 +36,16 @@ const Pie = ({province} : {province:string}) => {
     ["panas_bumi", pembangkitan[province]["panas_bumi"]],
     ["surya", pembangkitan[province]["surya"]],
     ["uap", pembangkitan[province]["uap"]]
+    ]
+
+    guna = [
+        ["Jenis Penggunaan", "listrik (Gwh)"],
+        ["industri", penggunaan[province]["industri"]],
+        ["rumahtangga", penggunaan[province]["rumahtangga"]],
+        ["komersial", penggunaan[province]["komersial"]],
+        ["pemerintah", penggunaan[province]["pemerintah"]],
+        ["penerangan_jalan", penggunaan[province]["penerangan_jalan"]],
+        ["sosial", penggunaan[province]["sosial"]]
     ]
 
 
@@ -74,16 +85,19 @@ const Pie = ({province} : {province:string}) => {
         console.log(penggunaan)
 
 
-        console.log(bangkit)
+        console.log(guna)
         console.log(data)
         
     });
     
     
-    const options = {
-        title: "My Daily Activities",
+    const options1 = {
+        title: "Pembangkitan Listrik (Gwh)",
+        titleTextStyle: {
+            color: '#ffffff'
+        },
         pieHole: 0.4, // Creates a Donut Chart. Does not do anything when is3D is enabled
-        is3D: true, // Enables 3D view
+        is3D: false, // Enables 3D view
         // slices: {
         //   1: { offset: 0.2 }, // Explodes the second slice
         // },
@@ -93,24 +107,59 @@ const Pie = ({province} : {province:string}) => {
             position: "bottom",
             alignment: "center",
             textStyle: {
-                color: "#233238",
+                color: "#ffffff",
                 fontSize: 14,
             },
         },
-        backgroundColor: { fill:'#feffc2' },
-        colors: ["#8AD1C2", "#9F8AD1", "#D18A99", "#BCD18A", "#D1C28A"],
+        backgroundColor: { fill:'transparent' },
+        colors: ["#00cbde", "#6e4900", "#00d639", "#00d1ab", "#858585", "#474747", "#003ba8", "#b80000", "#d1ce00", "#d1ce00"],
+    };    
+
+        const options2 = {
+        title: "Penggunaan Listrik (Gwh)",
+        titleTextStyle: {
+            color: '#ffffff'
+        },
+        pieHole: 0.4, // Creates a Donut Chart. Does not do anything when is3D is enabled
+        is3D: false, // Enables 3D view
+        // slices: {
+        //   1: { offset: 0.2 }, // Explodes the second slice
+        // },
+        pieStartAngle: 100, // Rotates the chart
+        sliceVisibilityThreshold: 0.02, // Hides slices smaller than 2%
+        legend: {
+            position: "bottom",
+            alignment: "center",
+            textStyle: {
+                color: "#ffffff",
+                fontSize: 14,
+            },
+        },
+        backgroundColor: { fill:'transparent' },
+        colors: ["#8a8a8a", "#6bdb58", "#d9aa00", "#a80000", "#fffb00", "#00d9ed"],
     };    
 
     return (
         <div>
             <h1 className="text-3xl font-bold mb-2 text-center">{province} 2023</h1>
-            <Chart
-                chartType="PieChart"
-                data={bangkit}
-                options={options}
-                width={"100%"}
-                height={"400px"}
-            />
+            <div>
+                <Chart
+                    chartType="PieChart"
+                    data={bangkit}
+                    options={options1}
+                    width={"100%"}
+                    height={"400px"}
+                />
+            </div>
+            <div>
+                <Chart
+                    chartType="PieChart"
+                    data={guna}
+                    options={options2}
+                    width={"100%"}
+                    height={"400px"}
+                />
+            </div>
         </div>
     )
 }
