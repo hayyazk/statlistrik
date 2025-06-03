@@ -3,8 +3,15 @@ import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
 import type { LatLngBoundsExpression } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import geoData from "../../public/data/provinsi.geojson.json";
-import electricityData from "../../public/data/map_data_2023.json";
+import rawData from "../../public/data/map_data_2023.json";
 import * as ss from "simple-statistics";
+
+interface ElectricityData {
+  [key: string]: {
+    [key: string]: number;
+  };
+}
+const electricityData = rawData as ElectricityData;
 
 const bounds: LatLngBoundsExpression = [
   [-11.2, 94.9],
@@ -39,7 +46,7 @@ interface MapProps {
   setProvince: (prov: string) => void;
 }
 
-const Map: React.FC<MapProps> = ({province, setProvince}) => {
+const Map: React.FC<MapProps> = ({setProvince}) => {
   const [selectedMetric, setSelectedMetric] = useState("Generated_GWh");
   const [jenksBreaks, setJenksBreaks] = useState<number[]>([]);
 

@@ -1,6 +1,13 @@
 import React, { useState } from "react";
-import lineData from "../../public/data/line_data.json";
+import rawData from "../../public/data/line_data.json";
 import Plot from "react-plotly.js";
+
+interface LineData {
+  [key: string]: {
+    [key: string]: number;
+  };
+}
+const lineData = rawData as LineData;
 
 const Line: React.FC = () => {
   const [selectedProvinces, setSelectedProvinces] = useState<string[]>(["Indonesia"]);
@@ -49,8 +56,6 @@ const Line: React.FC = () => {
                 plot_bgcolor: "transparent",
                 paper_bgcolor: "transparent",
                 font: { color: "white" },
-                xaxis: { title: "Year" },
-                yaxis: { title: "GWh" },
                 showlegend: false,
             }}
             config={{ displayModeBar: false }}
@@ -76,8 +81,6 @@ const Line: React.FC = () => {
                 plot_bgcolor: "transparent",
                 paper_bgcolor: "transparent",
                 font: { color: "white" },
-                xaxis: { title: "Year" },
-                yaxis: { title: "GWh" },
                 showlegend: false,
             }}
             config={{ displayModeBar: false }}
@@ -85,7 +88,7 @@ const Line: React.FC = () => {
         </div>   
         </div>
         <div className="flex gap-4">
-            <h3 className="text-lg font-semibold mb-2">Tambahkan<br></br> Provinsi</h3>
+            <h3 className="text-lg font-semibold mb-2">Tambahkan<br></br> Provinsi (max 5)</h3>
             <select
             onChange={(e) => handleAddProvince(e.target.value)}
             className="px-3 py-1 rounded mb-4 bg-white text-black"
