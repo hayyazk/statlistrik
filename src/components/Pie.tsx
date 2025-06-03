@@ -103,7 +103,7 @@ const Pie = ({province} : {province:string}) => {
 
     return (
         <div>
-            <h1 className="text-3xl font-bold mb-2 text-center">{province} 2023</h1>
+            <h2 className="text-3xl font-bold mb-2 text-center">{province}</h2>
             <Chart
                 chartType="PieChart"
                 data={bangkit}
