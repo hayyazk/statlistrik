@@ -17,26 +17,26 @@ const Pie = ({province} : {province:string}) => {
     
     bangkit = [
     ["Jenis Pembangkit", "listrik (Gwh)"],
-    ["air", pembangkitan[province]["air"]],
-    ["diesel", pembangkitan[province]["diesel"]],
-    ["gas_dan_uap", pembangkitan[province]["gas_dan_uap"]],
-    ["gas", pembangkitan[province]["gas"]],
-    ["lain", pembangkitan[province]["lain"]],
-    ["mesin_gas", pembangkitan[province]["mesin_gas"]],
-    ["mikrohidro", pembangkitan[province]["mikrohidro"]],
-    ["panas_bumi", pembangkitan[province]["panas_bumi"]],
-    ["surya", pembangkitan[province]["surya"]],
-    ["uap", pembangkitan[province]["uap"]]
+    ["Air", pembangkitan[province]["air"]],
+    ["Diesel", pembangkitan[province]["diesel"]],
+    ["Gas dan Uap", pembangkitan[province]["gas_dan_uap"]],
+    ["Gas", pembangkitan[province]["gas"]],
+    ["Lain", pembangkitan[province]["lain"]],
+    ["Mesin Gas", pembangkitan[province]["mesin_gas"]],
+    ["Mikrohidro", pembangkitan[province]["mikrohidro"]],
+    ["Panas Bumi", pembangkitan[province]["panas_bumi"]],
+    ["Surya", pembangkitan[province]["surya"]],
+    ["Uap", pembangkitan[province]["uap"]],
     ]
 
     guna = [
         ["Jenis Penggunaan", "listrik (Gwh)"],
-        ["industri", penggunaan[province]["industri"]],
-        ["rumahtangga", penggunaan[province]["rumahtangga"]],
-        ["komersial", penggunaan[province]["komersial"]],
-        ["pemerintah", penggunaan[province]["pemerintah"]],
-        ["penerangan_jalan", penggunaan[province]["penerangan_jalan"]],
-        ["sosial", penggunaan[province]["sosial"]]
+        ["Industri", penggunaan[province]["industri"]],
+        ["Rumahtangga", penggunaan[province]["rumahtangga"]],
+        ["Komersial", penggunaan[province]["komersial"]],
+        ["Pemerintah", penggunaan[province]["pemerintah"]],
+        ["Penerangan Jalan", penggunaan[province]["penerangan_jalan"]],
+        ["Sosial", penggunaan[province]["sosial"]]
     ]
     
     
@@ -45,10 +45,10 @@ const Pie = ({province} : {province:string}) => {
         titleTextStyle: {
             color: '#ffffff'
         },
-        pieHole: 0.4,
+        // pieHole: 0.4,
         is3D: false,
         pieStartAngle: 100,
-        sliceVisibilityThreshold: 0.02,
+        // sliceVisibilityThreshold: 0.02,
         legend: {
             position: "bottom",
             alignment: "center",
@@ -58,7 +58,7 @@ const Pie = ({province} : {province:string}) => {
             },
         },
         backgroundColor: "transparent",
-        colors: ["#FFFFF2", "#faf291", "#F8E70D", "#FCB407", "#c26100", "#FFFFF2", "#faf291", "#F8E70D", "#FCB407", "#c26100"],
+        colors: ["#c26100", "#c26100", "#c26100", "#c26100", "#c26100", "#c26100", "#c26100", "#c26100", "#c26100", "#c26100"],
     };    
 
         const options2 = {
@@ -66,10 +66,10 @@ const Pie = ({province} : {province:string}) => {
         titleTextStyle: {
             color: '#ffffff'
         },
-        pieHole: 0.4,
+        // pieHole: 0.4,
         is3D: false, 
         pieStartAngle: 100,
-        sliceVisibilityThreshold: 0.02,
+        // sliceVisibilityThreshold: 0.02,
         legend: {
             position: "bottom",
             alignment: "center",
@@ -79,19 +79,19 @@ const Pie = ({province} : {province:string}) => {
             },
         },
         backgroundColor: "transparent",
-        colors: ["#FFFFF2", "#faf291", "#F8E70D", "#FCB407", "#c26100"],
+        colors: ["#c26100", "#c26100", "#c26100", "#c26100", "#c26100"],
     };    
 
     return (
-        <div>
-            <h2 className="text-3xl font-bold mb-2 text-center">{province}</h2>
+        <div className="flex-col justify-between">
+            <h2 className="text-3xl font-bold text-center">{province}</h2>
             <div className="flex">
                 <div>
                     <Chart
                         chartType="PieChart"
                         data={bangkit}
                         options={options1}
-                        width={"250px"}
+                        width={"280px"}
                         height={"300px"}
                     />
                 </div>
@@ -100,7 +100,7 @@ const Pie = ({province} : {province:string}) => {
                         chartType="PieChart"
                         data={guna}
                         options={options2}
-                        width={"250px"}
+                        width={"280px"}
                         height={"300px"}
                     />
                 </div>

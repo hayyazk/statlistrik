@@ -86,7 +86,7 @@ const Map: React.FC<MapProps> = ({setProvince}) => {
   };
 
   return (
-    <div className="relative m-4">
+    <div className="relative">
       <div className="mb-4 flex gap-4 justify-center">
         {Object.keys(metricLabels).map((key) => (
           <label key={key} className="cursor-pointer">
@@ -106,7 +106,7 @@ const Map: React.FC<MapProps> = ({setProvince}) => {
         bounds={bounds}
         maxBounds={bounds}
         maxBoundsViscosity={1.0}
-        style={{ height: "500px", width: "700px" }}
+        style={{ height: "420px", width: "650px" }}
         zoomSnap={0.1}
         scrollWheelZoom={true}
         dragging={true}

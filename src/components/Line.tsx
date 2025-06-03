@@ -87,13 +87,13 @@ const Line: React.FC = () => {
             />
         </div>   
         </div>
-        <div className="flex gap-4">
-            <h3 className="text-lg font-semibold mb-2">Tambahkan<br></br> Provinsi (max 5)</h3>
+        <div className="flex gap-4 mx-10">
+            <h3 className="font-semibold mb-2">Tambahkan<br></br> Provinsi (maks 5)</h3>
             <select
             onChange={(e) => handleAddProvince(e.target.value)}
             className="px-3 py-1 rounded mb-4 bg-white text-black"
             >
-            <option value="">-- Select a province --</option>
+            <option value="">- Pilih provinsi -</option>
             {provinceOptions.map((prov) => (
                 <option key={prov} value={prov}>{prov}</option>
             ))}
