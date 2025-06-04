@@ -65,7 +65,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -76,4 +76,14 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+.custom-google-chart text {
+  fill: white !important;
+}
+
+.custom-google-chart .google-visualization-controls-pagination-button {
+  background-color: transparent !important;
+  fill: white !important;
+  color: white !important;
 }

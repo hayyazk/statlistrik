@@ -57,6 +57,8 @@ const Line: React.FC = () => {
                 paper_bgcolor: "transparent",
                 font: { color: "white" },
                 showlegend: false,
+                xaxis: { gridcolor: "rgba(255,255,255,0.5)" },
+                yaxis: { gridcolor: "rgba(255,255,255,0.5)" },
             }}
             config={{ displayModeBar: false }}
             />
@@ -82,30 +84,32 @@ const Line: React.FC = () => {
                 paper_bgcolor: "transparent",
                 font: { color: "white" },
                 showlegend: false,
+                xaxis: { gridcolor: "rgba(255,255,255,0.5)" },
+                yaxis: { gridcolor: "rgba(255,255,255,0.5)" },
             }}
             config={{ displayModeBar: false }}
             />
         </div>   
         </div>
-        <div className="flex gap-4 mx-10">
-            <h3 className="font-semibold mb-2">Tambahkan<br></br> Provinsi (maks 5)</h3>
+        <div className="flex gap-4 mx-10 my-auto">
+            <h3 className="font-semibold mb-2 text-start text-sm w-30">Tambahkan<br></br> Provinsi (maks 5)</h3>
             <select
             onChange={(e) => handleAddProvince(e.target.value)}
-            className="px-3 py-1 rounded mb-4 bg-white text-black"
+            className="px-3 py-1 rounded mb-4 bg-white text-black h-10"
             >
             <option value="">- Pilih provinsi -</option>
             {provinceOptions.map((prov) => (
                 <option key={prov} value={prov}>{prov}</option>
             ))}
             </select>
-            <div className="flex gap-1">
+            <div className="flex gap-1 flex-wrap">
             {selectedProvinces.map((prov) => (
                 <div>
                     <button
                     key={prov}
                     onClick={() => handleRemoveProvince(prov)}
                     className="px-3 rounded-full text-sm text-white"
-                    style={{ backgroundColor: getColorForProvince(prov), color: "black" }}
+                    style={{ backgroundColor: getColorForProvince(prov), color: "black", fontSize: "14px" }}
                     >
                     {prov} ×
                     </button>

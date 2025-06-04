@@ -14,10 +14,10 @@ function App() {
       <p className="text-amber-100 font-bold">Dashboard Pembangkitan dan Penggunaan Listrik Indonesia</p>
       <div className="flex items-center m-4">
         <Map province={province} setProvince={setProvince} />
-        <Pie province={province} />
+        <Pie province={province} setProvince={setProvince} />
       </div>
         
-      <div className="items-center">
+      <div className="items-center my-10">
         <Line></Line>
       </div>
     </div>
