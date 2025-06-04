@@ -78,9 +78,6 @@ button:focus-visible {
   }
 } */
 
-.custom-google-chart text {
-  fill: white !important;
-}
 
 .custom-google-chart .google-visualization-controls-pagination-button {
   background-color: transparent !important;

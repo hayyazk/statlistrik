@@ -58,13 +58,14 @@ const Pie: React.FC<PieProps> = ({province, setProvince}) => {
                 color: "#ffffff",
                 fontSize: 14,
             },
+            maxLines: 999
         },
         backgroundColor: "transparent",
         colors: ["#F2BE0A", "#E4A912", "#D7941B", "#C97F23", "BB6A2B", "AE5434", "A03F3C", "952E44", "86174D", "770055"],
-        pieSliceText: 'label',
         pieSliceTextStyle: {
             color: "black"
         },
+        pieSliceText: 'label',
     };    
 
     const options2 = {
@@ -140,6 +141,7 @@ const Pie: React.FC<PieProps> = ({province, setProvince}) => {
                         options={options2}
                         width={"575px"}
                         height={"210px"}
+                        className="custom-google-chart"
                     />
                 </div>
             </div>
